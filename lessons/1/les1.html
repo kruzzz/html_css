@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../pico-main/css/pico.cyan.min.css" />
+    <link rel="stylesheet" href="../../style.css" />
+
+    <title>Урок 1. Введение в CSS. </title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <h1> <a href="../../index.html">HOME</a> / Урок 1. Введение в CSS. </h1>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container">
+
+    <h2> Основы CSS: что это такое и зачем нужно </h2>
+    <p class="txt">
+        CSS (Cascading Style Sheets) — это язык стилей, используемый для описания внешнего вида и форматирования документов, написанных на HTML. 
+        Он позволяет отделить содержимое страницы от её дизайна.
+
+    <p class="txt">Основные задачи CSS:</p>
+    <ul>
+        <li>Определение внешнего вида веб-страниц.</li>
+        <li>Изменение цветов, шрифтов, отступов, выравнивания и других параметров.</li>
+        <li>Улучшение пользовательского опыта за счёт создания привлекательного и удобного интерфейса.</li>
+    </ul>
+    </p>
+
+    <h2>Способы подключения таблиц стилей</h2>
+    <p class="txt">CSS-стили можно подключить к HTML-документу несколькими способами. Давайте рассмотрим каждый из них.</p>
+    <h3>Внутренние стили (Embedded CSS)</h3>
+    <p class="txt">
+        Внутренние стили определяются внутри самого HTML-документа с помощью тега <span class="bracketed"> style </span>.
+        Этот способ удобен для задания стилей для конкретной страницы.
+    </p>
+    <img src="img\embedded_css.png" alt="">
+
+    <h3>Внешние стили (External CSS)</h3>
+    <p class="txt">
+        Внешние стили определяются в отдельном файле CSS, который подключается к HTML-документу с помощью тега <span class="bracketed">link</span>. 
+        Этот способ позволяет использовать один файл стилей для нескольких страниц сайта.
+    </p>
+
+        <h5>HTML-документ (index.html):</h5>
+        <img src="img\external_css_1.png" alt="">
+
+        <h5>Файл CSS (styles.css):</h5>
+        <img src="img\external_css_2.png" alt="">
+    
+    <h3>Встроенные стили (Inline CSS)</h3>
+    <p class="txt">
+        Встроенные стили задаются непосредственно в HTML-тегах с помощью атрибута <mark>style</mark>. Этот способ удобен для задания стилей для отдельных элементов.
+    </p>
+    <img src="img\inline_css.png" alt="">
+
+    <h2>Основные понятия и синтаксис CSS</h2>
+    <h3>Базовый синтаксис CSS</h3>
+    <p class="txt">CSS состоит из блоков, называемых <abbr title="Abbreviation" data-tooltip="rules">правилами</abbr>. 
+        Каждое правило состоит из <abbr title="Abbreviation" data-tooltip="selector">селектора</abbr> и 
+        <abbr title="Abbreviation" data-tooltip="declaration">объявления</abbr>.</p>
+    <img src="../../img/css-declaration-small.png" alt="">
+    <p class="txt"> 
+        <ul>
+            <li><mark>Селектор</mark> (selector): указывает, к какому элементу HTML применяется стиль (в данном случае, p).</li>
+            <li>
+                <mark>Объявление</mark> (declaration): определяет стиль, который будет применён к элементу.
+                Оно состоит из <mark>свойства</mark> (property) и <mark>значения</mark> (value).
+            </li>
+        </ul>
+    </p>
+    <h3>Основные селекторы</h3>
+    <ol>
+        <li><mark>Тег-селекторы</mark>: применяют стили ко всем элементам определённого тега. 
+            <img src="../1/img/tag_selector.png" alt=""></li><br>
+        <li><mark>Класс-селекторы</mark>: применяют стили к элементам с определённым классом.
+            <img src="../1/img/class_selector.png" alt=""></li><br>
+        <li><mark>ID-селекторы</mark>: применяют стили к элементу с определённым ID.
+            <img src="../1/img/id_selector.png" alt=""></li><br>
+        </li>
+        <li><mark>Комбинированные селекторы</mark>: позволяют применять стили к элементам, которые соответствуют нескольким условиям.
+            <img src="../1/img/combined_selector.png" alt=""></li>
+        </li>
+    </ol>
+    
+
+    </p>
+
+
+
+
+
+    </main>
+    <!-- ./ Main -->
+</body>
+</html>

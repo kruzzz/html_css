@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../pico-main/css/pico.cyan.min.css" />
+    <link rel="stylesheet" href="../../style.css" />
+
+    <title>Урок 3. Блочная модель. </title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <h1> <a href="../../index.html">HOME</a> / Урок 3. Блочная модель </h1>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container">
+
+    <h2> Блочные и строчные элементы </h2>
+    <p class="txt">
+        В CSS мы, говоря упрощённо, имеем два типа элементов — <b>блочные</b> и <b>строчные</b>. 
+        Эти характеристики относятся к поведению блоков в контексте потока страницы и относительно других блоков на странице.
+    </p>
+    <h3>Блочные элементы</h3>
+    <p class="txt">Блочные элементы занимают всю ширину родительского контейнера и 
+        всегда начинаются с новой строки. Они используются для создания структуры страницы.</p>
+    <h4>Примеры блочных элементов</h4>
+    <ul>
+        <li><span class="bracketed">div</span></li>
+        <li><span class="bracketed">p</span></li>
+        <li><span class="bracketed">h1</span> .. <span class="bracketed">h6</span></li>
+        <li><span class="bracketed">ul</span> и <span class="bracketed">ol</span></li>
+        <li><span class="bracketed">form</span></li>
+        <li><span class="bracketed">table</span></li>
+    </ul>
+    <h4>Свойства блочных элементов</h4>
+    <ul>
+        <li>Занимают всю доступную ширину родительского элемента</li>
+        <li>Начинаются с новой строки.</li>
+        <li>Могут иметь ширину и высоту.</li>
+        <li>Поддерживают все типы внутренних и внешних отступов (<b>padding</b> и <b>margin</b>).</li>
+    </ul>
+
+    <h3>Строчные элементы</h3>
+    <p class="txt"> Строчные элементы занимают только необходимую для их контента ширину и не начинают новую строку. 
+        Они используются для стилизации частей текста внутри блочных элементов.</p>
+    <h4>Примеры строчных элементов</h4>
+    <ul>
+        <li><span class="bracketed">span</span></li>
+        <li><span class="bracketed">a</span></li>
+        <li><span class="bracketed">strong</span> .. <span class="bracketed">h6</span></li>
+        <li><span class="bracketed">em</span> и <span class="bracketed">ol</span></li>
+        <li><span class="bracketed">img</span></li>
+        <li><span class="bracketed">input</span></li>
+    </ul>
+    <h4>Свойства строчных элементов</h4>
+    <ul>
+        <li>Занимают только необходимую для их контента ширину.</li>
+        <li>Не начинают новую строку.</li>
+        <li>Не могут иметь ширину и высоту.</li>
+        <li>Поддерживают только внутренние отступы (<b>padding</b>), но не внешние отступы (<b>margin</b>). </li>
+    </ul>
+
+    <h3>Изменение поведения элементов с помощью CSS</h3>
+
+    С помощью CSS мы можем изменить поведение элементов с помощью свойства display.
+    <ul>    
+        <li><mark>display: block;</mark> — делает элемент блочным.</li>
+        <li><mark>display: inline;</mark> — делает элемент строчным.</li>
+        <li><mark>display: inline-block;</mark> — делает элемент строчным-блочным (сочетает в себе свойства как блочных, 
+            так и строчных элементов. Он располагается в одной строке с другими элементами, но при этом можно задавать ширину и высоту).</li>
+    </ul>
+
+    <h2>Примеры</h2>
+
+    
+
+
+    <article>
+        <p>Отличие блочных элементов от  строчных</p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="cssbook/lesson3/block and inline elements" src="https://codepen.io/kruzzz74/embed/VwJpwXW?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/kruzzz74/pen/VwJpwXW">
+        cssbook/lesson3/block and inline elements</a> by Pavel (<a href="https://codepen.io/kruzzz74">@kruzzz74</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+    </article>
+    <article>
+        <p>Пример оформления одного блока </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="margin padding for div" src="https://codepen.io/kruzzz74/embed/abQRmwP?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/kruzzz74/pen/abQRmwP">
+            margin padding for div</a> by Pavel (<a href="https://codepen.io/kruzzz74">@kruzzz74</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+    </article>
+
+    <article>
+        <p>Пример оформления нескольких блоков </p>
+    
+    <iframe height="300" style="width: 100%;" scrolling="no" title="more divs" src="https://codepen.io/kruzzz74/embed/PoxxNve?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/kruzzz74/pen/PoxxNve">
+        more divs</a> by Pavel (<a href="https://codepen.io/kruzzz74">@kruzzz74</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+      </iframe>
+    </article>
+    <h2>Практика</h2>
+    <ul>
+        <li><a href="img/divs_task_1.png" target="_blank">Задание 1</a></li>
+        <li><a href="img/divs_task_2.png" target="_blank">Задание 2</a></li>
+        <li><a href="img/divs_task_3.png" target="_blank">Задание 3</a></li>
+        <li><a href="Task4.html">Задание 4</a></li>
+    </ul>
+    
+    </main>
+    <!-- ./ Main -->
+</body>
+</html>

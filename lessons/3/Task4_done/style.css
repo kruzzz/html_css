@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid darkblue;
+    text-align: center;
+}
+
+p {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: lightyellow;
+    border-left: 5px solid orange;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+ul {
+    background-color: lightgray;
+    padding: 20px;
+    border: 1px solid darkgray;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}

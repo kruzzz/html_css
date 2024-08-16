@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../pico-main/css/pico.cyan.min.css" />
+    <link rel="stylesheet" href="../../style.css" />
+
+    <title>Урок 2. Цвета и форматирование текста </title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container">
+        <h1> <a href="../../index.html">HOME</a> / 2. Цвета и форматирование текста </h1>
+    </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container">
+
+    <h2> Цветовые модели </h2>
+    <p class="txt">
+        Цвета в CSS можно задавать различными способами. Рассмотрим основные из них.
+        <ol>
+            <li>
+                <b>Названия цветов (Color Names)</b>
+            </li>
+                <p>
+                    CSS поддерживает названия основных цветов, таких как <b>red</b>, <b>blue</b>, <b>green</b>, <b>yellow</b> и т.д.
+                </p>
+                <img src="../2/img/color_names.png" alt=""><br><br>
+            <li>
+                <b>HEX-коды (Hexadecimal)</b>
+            </li>
+                <p>
+                    HEX-коды представляют цвета в шестнадцатеричной системе счисления и начинаются с символа #,
+                    за которым следуют 6 символов (цифры и буквы от A до F).
+                </p>
+                <img src="../2/img/color_hex.png" alt=""><br><br>
+            <li>
+                <b>RGB-значения (Red, Green, Blue)</b>
+            </li>
+            <p>
+                RGB-значения задают цвет с помощью трёх чисел, которые определяют интенсивность красного,
+                зелёного и синего цветов. Значения могут быть в диапазоне от 0 до 255.
+            </p>
+                <img src="../2/img/color_RGB.png" alt=""><br><br>
+
+            <li>
+                <b>RGBA-значения (Red, Green, Blue, Alpha)</b>
+            </li>
+            <p>
+                RGBA-значения аналогичны RGB, но включают дополнительный параметр Alpha, который
+                задаёт прозрачность цвета. Значение Alpha варьируется от 0 (полностью прозрачно) до 1 (полностью непрозрачно).
+            </p>
+                <img src="../2/img/color_RGBA.png" alt="">
+        </ol>
+    </p>
+    
+    <h2>Настройка внешнего вида текста</h2>
+    <p class="txt">CSS позволяет изменять внешний вид текста с помощью различных свойств шрифтов. </p>
+    <ol>
+        <li>Цвет и фон</li>
+        <ul>
+            <li><mark>color</mark>: устанавливает цвет текста.</li>
+            <li><mark>background-color</mark>: устанавливает цвет фона.</li>
+        </ul>
+        <li>Шрифт и текст</li>
+        <ul>
+            <li><mark>font-family</mark>: задает семейство шрифта.</li>
+            <li><mark>font-size</mark>: задает размер шрифта.</li>
+            <li><mark>font-weight</mark>: задает толщину шрифта (например, <b>normal, bold, [100, 200, 300, 400, 500, 600, 700, 800, 900]</b> — 
+                условные единицы насыщенности, где 400 — это стандартная насыщенность текста. Используются редко, так как большинство шрифтов имеют только обычное и жирное написание.).</li>
+            <li><mark>font-style</mark>: задает стиль шрифта (<b>normal, italic, oblique</b> - если у шрифта нет курсивного варианта начертания).</li>
+            <li><mark>line-height</mark>: задает высоту строки.</li>
+            <li><mark>text-align</mark>: выравнивание текста (например, <b>left, center, right, justify</b>).</li>
+            <li><mark>text-decoration</mark>: добавляет украшения к тексту (например, <b>underline, line-through, overline</b>).</li>
+        </ul>
+        <li>Отступы и поля</li>
+        <ul>
+            <li><mark>margin</mark>: устанавливает внешние отступы.</li>
+            <li><mark>padding</mark>: устанавливает внутренние отступы.</li>
+            <li><mark>margin-top</mark>, <mark>margin-right</mark>, <mark>margin-bottom</mark>, <mark>margin-left</mark>: устанавливают внешние отступы по сторонам.</li>
+            <li><mark>padding-top</mark>, <mark>padding-right</mark>, <mark>padding-bottom</mark>, <mark>padding-left</mark>: устанавливают внутренние отступы по сторонам.</li>
+        </ul>
+        <li>Границы (состоят из нескольких компонентов: ширины, стиля и цвета)</li>
+        <ul>            
+            <li><mark>border-width</mark>: задает ширину границы.</li>
+            <li><mark>border-style</mark>: задает стиль границы (например, <b>solid, dashed, dotted, double</b>).</li>
+            <li><mark>border-color</mark>: задает цвет границы.</li>
+            <li><mark>border</mark>: комплексное значение, задает ширину, стиль и цвет.</li>
+        </ul>        
+    </ol>
+    <h2>Примеры </h2>
+
+    <article>
+        <p> Настройка текста внутри параграфа </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="cssbook/lesson2/fonts" src="https://codepen.io/kruzzz74/embed/GRbrrKM?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/kruzzz74/pen/GRbrrKM">
+            cssbook/lesson2/fonts</a> by Pavel (<a href="https://codepen.io/kruzzz74">@kruzzz74</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+    </article>
+
+    <article>
+        <p> Варианты настройки внешнего вида заголовков </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="h1 - h6 css style" src="https://codepen.io/kruzzz74/embed/QWJZdaj?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/kruzzz74/pen/QWJZdaj">
+            h1 - h6 css style</a> by Pavel (<a href="https://codepen.io/kruzzz74">@kruzzz74</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+    </article>
+
+    <h2>Практика</h2>
+    <ul>
+        <li><a href="img/Task-less-2.png" target="_blank">Задание</a></li>
+    </ul>
+    </main>
+    <!-- ./ Main -->
+</body>
+</html>

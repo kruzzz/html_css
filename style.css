@@ -1,0 +1,28 @@
+.bracketed {
+    position: relative;
+    background-color:var(--pico-mark-background-color);
+    color:var(--pico-mark-color);
+    vertical-align:baseline;
+    font-weight: 500;
+}
+
+.bracketed::before {
+    content: "<"; /* Левая угловая скобка */    
+    
+    background-color:var(--pico-mark-background-color);
+    color:var(--pico-mark-color);
+    font-weight: 500;
+}
+
+.bracketed::after {
+    content: ">"; /* Правая угловая скобка */
+
+    background-color:var(--pico-mark-background-color);
+    color:var(--pico-mark-color);
+    font-weight: 500;
+}
+
+.txt{
+    text-align: justify;
+}
+
